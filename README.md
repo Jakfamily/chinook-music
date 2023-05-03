@@ -57,3 +57,12 @@ puts "Le coût total de la discographie de Deep Purple est de : #{total_cost} eu
 
 -Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
 
+tracks = Track.where(artist: "Eric Clapton")
+
+tracks.each do |track|
+  track.artist = "Britney Spears"
+  track.save
+end
+
+
+
