@@ -14,7 +14,7 @@ Quel groupe a sorti l'album "Use Your Illusion II" ? existe pas
 Combien y a t'il d'albums dont le titre contient "Great" ? where("title like ?","%great%").count = 13
 Supprime tous les albums dont le nom contient "music"Album.where("name LIKE ?", "%music%").destroy_all
 Combien y a t'il d'albums écrits par AC/DC ? Album.where("artist like ?","%AC/DC%").count = 2
-Combien de chanson durent exactement 158589 millisecondes ?
+Combien de chanson durent exactement 158589 millisecondes ? Track.find_by(duration:158589) = 0
 
 puts en console tous les titres de AC/DC.
 puts en console tous les titres de l'album "Let There Be Rock".
