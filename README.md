@@ -13,7 +13,7 @@ quiz sur db
 
 -Combien y a t'il d'albums dont le titre contient "Great" ? where("title like ?","%great%").count = 13
 -Supprime tous les albums dont le nom contient "music"Album.where("name LIKE ?", "%music%").destroy_all
--Combien y a t'il d'albums écrits par AC/DC ? Album.where("artist like ?","%AC/DC%").count = 18
+-Combien y a t'il d'albums écrits par AC/DC ? Album.where("artist like ?","%AC/DC%").count = 2
 -Combien de chanson durent exactement 158589 millisecondes ? Track.find_by(duration:158589) = 0
 
 -puts en console tous les titres de AC/DC.
@@ -42,8 +42,18 @@ album_tracks.each do |track|
 end
 
 puts "Le prix total de l'album est : #{total_price} euros"
-puts "La durée totale de l'album est : #{total_duration} millisecondes"
+puts "La durée totale de l'album est : #{total_duration} millisecondes" = 7.92 prix / 2453259 miliseconde
 
 -Calcule le coût de l'intégralité de la discographie de "Deep Purple".
+
+deep_purple_tracks = Track.where(artist: "Deep Purple")
+total_cost = 0
+
+deep_purple_tracks.each do |track|
+  total_cost += track.price
+end
+
+puts "Le coût total de la discographie de Deep Purple est de : #{total_cost} euros" = 99.08
+
 -Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
 
