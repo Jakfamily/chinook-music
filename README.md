@@ -11,7 +11,7 @@ Qui est l'auteur de la chanson "White Room" ? eric clapton
 Quelle chanson dure exactement 188133 milliseconds ? perfect de jhon morisette
 Quel groupe a sorti l'album "Use Your Illusion II" ? existe pas 
 
-Combien y a t'il d'albums dont le titre contient "Great" ? (indice)
+Combien y a t'il d'albums dont le titre contient "Great" ? where("title like ?","%great%").count = 13
 Supprime tous les albums dont le nom contient "music".
 Combien y a t'il d'albums écrits par AC/DC ?
 Combien de chanson durent exactement 158589 millisecondes ?
