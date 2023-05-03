@@ -26,7 +26,7 @@ end
 -puts en console tous les titres de l'album "Let There Be Rock".
 
 rock_tracks = Track.where(album: "Let There Be Rock")
-rock_tracks.each do |track|
+rock_tracks.each do |track|"
   puts track.title
 end
 
