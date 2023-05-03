@@ -6,9 +6,9 @@ manipulation db afin de repondre au quizz
 
 quiz sur db 
 
-Quel est le nombre total d'objets Album contenus dans la base (sans regarder les id bien sûr) ?
-Qui est l'auteur de la chanson "White Room" ?
-Quelle chanson dure exactement 188133 milliseconds ?
+Quel est le nombre total d'objets Album contenus dans la base (sans regarder les id bien sûr) ?347
+Qui est l'auteur de la chanson "White Room" ? eric clapton
+Quelle chanson dure exactement 188133 milliseconds ? perfect de jhon morisette
 Quel groupe a sorti l'album "Use Your Illusion II" ?
 
 Combien y a t'il d'albums dont le titre contient "Great" ? (indice)
