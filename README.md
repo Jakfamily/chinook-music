@@ -31,6 +31,19 @@ rock_tracks.each do |track|
 end
 
 -Calcule le prix total de cet album ainsi que sa durée totale.
+
+album_tracks = Track.where(album: "Let There Be Rock")
+total_price = 0
+total_duration = 0
+
+album_tracks.each do |track|
+  total_price += track.price
+  total_duration += track.duration
+end
+
+puts "Le prix total de l'album est : #{total_price} euros"
+puts "La durée totale de l'album est : #{total_duration} millisecondes"
+
 -Calcule le coût de l'intégralité de la discographie de "Deep Purple".
 -Modifie (via une boucle) tous les titres de "Eric Clapton" afin qu'ils soient affichés avec "Britney Spears" en artist.
 
